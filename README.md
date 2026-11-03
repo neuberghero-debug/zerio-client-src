@@ -1,20 +1,23 @@
-# Zerio Client
+# Zerio Client — (decompiled)
 
-Decompiled sources of the Zerio Client Fabric mod for Minecraft 1.21.11.
+Decompiled Java sources of the **Zerio Client** Fabric mod (`ZerioClientCracked.jar`),
+produced with [CFR](https://github.com/leibnitz27/cfr).
 
-## Status
+## What's here
 
-These sources were produced by decompiling the released jar with
-[CFR](https://www.benf.org/other/cfr/) (the jar ships obfuscated;
-roughly 58% of classes decompile, the rest fails at the control-flow
-level). They are provided
-for reference and auditing purposes. Decompiled code does not compile
-cleanly out of the box — names are synthetic, some constructs need manual
-cleanup, and bundled libraries are not separated.
+- `src/main/java` — 418 decompiled classes (`z/`, `leakestan/`, `dev/jnic/`),
+  plus resources (`fabric.mod.json`, mixin configs, access widener)
 
-## Layout
+## Notes on completeness
 
-- `src/main/java` — decompiled Java sources
-- `src/main/resources` — assets, mixins config, fabric.mod.json
-- `build.gradle` / `gradle.properties` — standard Fabric Loom skeleton
-  as a starting point for reconstruction
+This jar is heavily obfuscated (commercial protector, JNIC bootstrapper,
+MethodHandle-heavy control flow). Of ~726 classes, 418 decompiled — the rest
+use constructs CFR cannot structure (see `summary.txt` from the decompiler run).
+That's an inherent limit of the tooling on protected jars, not a redaction.
+Names are the jar's own obfuscated identifiers (`z.*`, `aaaa…`).
+
+Not buildable as-is; Gradle files are a reconstruction skeleton.
+
+## Purpose
+
+Reference and auditing. All rights belong to the original authors.
