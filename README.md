@@ -1,7 +1,7 @@
 # Zerio Client — (decompiled)
 
-Decompiled Java sources of the **Zerio Client** Fabric mod (`ZerioClientCracked.jar`),
-produced with [CFR](https://github.com/leibnitz27/cfr).
+Zerio Client is a heavily obfuscated Fabric client for Minecraft 1.21.11.
+The tree below is the released jar opened with CFR.
 
 ## What's here
 
@@ -19,6 +19,11 @@ Notable parts that survived decompilation:
 - `leakestan.Boot` — entrypoint/bootstrap
 - `z.r` — core module and config classes
 - `dev.jnic` — JNIC native-protector stubs (no natives shipped here)
+
+## Installation
+
+Drop the release jar from the [Releases](../../releases) page into
+`.minecraft/mods` (Fabric Loader ≥ 0.16, Fabric API, Minecraft 1.21.11).
 
 ## Requirements
 
